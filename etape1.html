@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Game1</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+  </head>
+  <body class=" d-flex">
+    <form role="form" class="row bg-dark text-white col-12 m-2 card card-body" action="index.html" method="post" onsubmit="result(); return false;">
+      <div class="form-group offset">
+        <label class="col-12" for="user_input_number"> Entrée votre numéro !</label>
+        <input class="col-12 form-control m-1" id="user_input_number" type="number" name="user_input_number" value="" min="1" max="10"><div class="">
+      </div>
+      <div class="form-group  d-flex justify-content-center">
+        <input class="col-lg-3 col-md-6 col-12 offse   btn btn-block btn-info bg-success  m-1 form-control" id="validez" type="button" name="validez" value="validez" onclick="result()">
+      </div>
+      <div class="form-group ">
+        <p class="col-12" id="user_number"></p>
+        <p class="col-12" id="random_number"></p>
+        <p class="col-12" id="resultat"></p>
+      </div>
+    </form>
+
+    <script type="text/javascript" src="js/blackjack.js">
+    </script>
+  </body>
+</html>
